@@ -25,7 +25,8 @@ if not args.file:
     sys.exit(1)
 
 image = Image.open(args.file)
-resizedimage = image.resize(inky.resolution)
+rotated_image = image.rotate(-90, expand=True)
+resizedimage = rotated_image.resize(inky.resolution)
 
 try:
     inky.set_image(resizedimage, saturation=saturation)
