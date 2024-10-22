@@ -47,7 +47,12 @@ curl https://get.pimoroni.com/inky | bash
 ```
 
 #### Cron Setup
+Download this repository:
+```bash
+git clone git@github.com:nemo/inky-mirror.git
+```
+
 Use `crontab -e` to add the following to the crontab:
 ```
-*/30 * * * * sh /home/nima/run.sh >/dev/null 2>&1
+*/30 * * * * sh /home/nima/inky-mirror/run.sh >/dev/null 2>&1
 ```
