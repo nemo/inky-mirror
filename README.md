@@ -7,6 +7,7 @@ I've built myself a simple system to remind me of my core focus areas for the ye
 - [In Progress] Zone 0: shows https://halfmoon.ws/daily-focus
 - [Planned] Zone 1: shows a different art piece from Cezanne every day 
 - [Planned] Zone 2: shows the latest photo sent to a Slack channel
+- [Planned] Zone 3: have an AI tell me in a different way why I should follow my dailly rituals
 
 ## Usage Details
 When the device is set-up, you can login with:
