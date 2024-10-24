@@ -1,0 +1,11 @@
+[Unit]
+Description=Handle Buttons
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/nima/inky-mirror/device-worker.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
