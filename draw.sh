@@ -13,4 +13,11 @@ fi
 
 echo "Running at $(date +"%Y-%m-%d %T")"
 firefox-esr --headless --wait-for-load --screenshot --window-size=448,600 "$URL"
-/home/nima/.virtualenvs/pimoroni/bin/python /home/nima/inky-mirror/image.py --file screenshot.png
+
+# Check if screenshot.png has changed
+if [ ! -f screenshot.png.md5 ] || ! md5sum -c screenshot.png.md5 &>/dev/null; then
+    md5sum screenshot.png > screenshot.png.md5
+    /home/nima/.virtualenvs/pimoroni/bin/python /home/nima/inky-mirror/image.py --file screenshot.png
+else
+    echo "screenshot.png hasn't changed. Skipping image.py execution."
+fi
