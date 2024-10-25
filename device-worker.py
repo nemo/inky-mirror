@@ -19,7 +19,7 @@ Press Ctrl+C to exit!
 # These will vary depending on platform and the ones
 # below should be correct for Raspberry Pi 5.
 # Run "gpioinfo" to find out what yours might be
-BUTTONS = ["PIN29", "PIN31", "PIN36", "PIN18"]
+BUTTONS = ["GPIO5", "GPIO6", "GPIO16", "GPIO24"]
 
 # These correspond to buttons A, B, C and D respectively
 LABELS = ["A", "B", "C", "D"]
@@ -56,12 +56,12 @@ def handle_button(event):
     print(f"Button press detected on pin: {pin} label: {label}")
 
     if label == "A":
-        print(f"Button A pressed. Running 'ls' command.")
-        run_bash_command("./run.sh https://api.halfmoon.ws/users/self/art")
+        print(f"Button A pressed. Displaying art.")
+        run_bash_command("./draw.sh https://api.halfmoon.ws/users/self/art")
         
     elif label == "B":
-        print(f"Button B pressed. Running 'pwd' command.")
-        run_bash_command("pwd")
+        print(f"Button B pressed. Displaying weather.")
+        run_bash_command("./draw")
 
 while True:
     for event in request.read_edge_events():
