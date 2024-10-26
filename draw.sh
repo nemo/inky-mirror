@@ -12,6 +12,7 @@ else
 fi
 
 echo "Running at $(date +"%Y-%m-%d %T")"
+pkill -f firefox-esr
 firefox-esr --headless --wait-for-load --screenshot --window-size=448,600 "$URL"
 
 # Check if screenshot.png has changed
