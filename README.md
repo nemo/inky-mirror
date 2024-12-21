@@ -4,8 +4,8 @@ I've built myself a simple system to remind me of my core focus areas for the ye
 
 ## Features
 
-- [In Progress] Zone 0: shows https://halfmoon.ws/daily-focus
-- [Planned] Zone 1: shows a different art piece from Cezanne every day 
+- [Done] Shows https://halfmoon.ws/daily-focus between 4am and 10am
+- [Done] Shows a different art piece between 10am to 4am
 - [Planned] Zone 2: shows the latest photo sent to a Slack channel
 - [Planned] Zone 3: have an AI tell me in a different way why I should follow my dailly rituals
 
@@ -17,7 +17,7 @@ ssh nima@inky.local
 ```
 
 ## Hardware
-I'm using a [Pimoroni Impression](https://pimoroni.com/impression), along with a [Raspberry Pi Zero WH ](https://www.adafruit.com/product/3708) to achieve this.
+I'm using a [Pimoroni Impression](https://pimoroni.com/impression), along with a [Raspberry Pi Zero WH](https://www.adafruit.com/product/3708) to achieve this. I've also 3D printed a case for it that's available on [Printables here](https://www.printables.com/model/51765-pimoroni-inky-impression-case).
 
 ### First-Time Set-up
 

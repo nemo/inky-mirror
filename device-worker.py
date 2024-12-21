@@ -5,11 +5,7 @@ import gpiodevice
 from gpiod.line import Bias, Direction, Edge
 import subprocess  # Add this import at the top of the file
 
-print("""buttons.py - Detect which button has been pressed
-
-This example should demonstrate how to:
- 1. set up gpiod to read buttons,
- 2. determine which button has been pressed
+print("""device-worker.py - Respond to button presses.
 
 Press Ctrl+C to exit!
 

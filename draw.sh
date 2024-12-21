@@ -13,7 +13,7 @@ fi
 
 echo "Running at $(date +"%Y-%m-%d %T")"
 pkill -f firefox-esr
-firefox-esr --headless --wait-for-load --screenshot --window-size=448,600 "$URL"
+firefox-esr --headless --wait-for-load --screenshot --window-size=600,448 "$URL"
 
 # Check if screenshot.png has changed
 if [ ! -f screenshot.png.md5 ] || ! md5sum -c screenshot.png.md5 &>/dev/null; then
