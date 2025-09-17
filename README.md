@@ -31,7 +31,7 @@ Using the Raspberry Pi Imager, install Raspberry Pi OS.
 
 Make sure we're up to date:
 ```bash
-sudo apt-get update -y && sudo apt- upgrade -y && sudo reboot
+sudo apt-get update -y && sudo apt-get upgrade -y && sudo reboot
 ```
 
 #### Edit Raspi configuration
