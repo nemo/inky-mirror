@@ -25,7 +25,8 @@ if not args.file:
     sys.exit(1)
 
 image = Image.open(args.file)
-rotated_image = image.rotate(-90, expand=True)
+# rotated_image = image.rotate(-90, expand=True)
+rotated_image = image.rotate(0, expand=True)
 resizedimage = rotated_image.resize(inky.resolution)
 
 try:
