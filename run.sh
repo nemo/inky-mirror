@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Empty mozilla cache
+rm -rf /home/nima/.moizlla
+
 # Get the current hour (in 24-hour format)
 current_hour=$(date +"%H")
 
