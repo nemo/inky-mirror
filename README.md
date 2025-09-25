@@ -50,7 +50,7 @@ Then:
 #### Screen Setup
 Install inky software:
 ```bash
-sudo apt install firefox-esr
+sudo apt-get install wkhtmltoimage xvfb -y
 curl https://get.pimoroni.com/inky | bash
 ```
 

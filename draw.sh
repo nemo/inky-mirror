@@ -12,8 +12,11 @@ else
 fi
 
 echo "Running at $(date +"%Y-%m-%d %T")"
-pkill -f firefox-esr
-firefox-esr --headless --wait-for-load --screenshot --window-size=600,448 "$URL"
+xvfb-run wkhtmltoimage --width 600 --height 448 \
+    --images --enable-plugins --javascript-delay 20000 \
+    --load-media-error-handling ignore --debug-javascript \
+    $URL screenshot.png
+
 
 # Check if screenshot.png has changed
 if [ ! -f screenshot.png.md5 ] || ! md5sum -c screenshot.png.md5 &>/dev/null; then
