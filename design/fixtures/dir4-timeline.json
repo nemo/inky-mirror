@@ -1,0 +1,212 @@
+{
+  "name": "dir4-timeline",
+  "template": "strip",
+  "slots": {
+    "header": {
+      "component": "dateline",
+      "props": {
+        "date": "2026-11-06",
+        "place": "Fort Greene",
+        "updated": "07:10"
+      }
+    },
+    "tl": {
+      "component": "weather",
+      "variant": "compact",
+      "props": {
+        "now": 44,
+        "condition": "Cloudy",
+        "summary": "Bright and cold",
+        "hi": 52,
+        "lo": 41,
+        "hours": [
+          {
+            "h": 6,
+            "t": 41,
+            "p": 0
+          },
+          {
+            "h": 7,
+            "t": 42,
+            "p": 0
+          },
+          {
+            "h": 8,
+            "t": 43,
+            "p": 0
+          },
+          {
+            "h": 9,
+            "t": 45,
+            "p": 0
+          },
+          {
+            "h": 10,
+            "t": 47,
+            "p": 0
+          },
+          {
+            "h": 11,
+            "t": 49,
+            "p": 0
+          },
+          {
+            "h": 12,
+            "t": 50,
+            "p": 0
+          },
+          {
+            "h": 13,
+            "t": 51,
+            "p": 0
+          },
+          {
+            "h": 14,
+            "t": 52,
+            "p": 0
+          },
+          {
+            "h": 15,
+            "t": 52,
+            "p": 0
+          },
+          {
+            "h": 16,
+            "t": 51,
+            "p": 0
+          },
+          {
+            "h": 17,
+            "t": 49,
+            "p": 0
+          },
+          {
+            "h": 18,
+            "t": 47,
+            "p": 0
+          },
+          {
+            "h": 19,
+            "t": 46,
+            "p": 0
+          },
+          {
+            "h": 20,
+            "t": 45,
+            "p": 0
+          },
+          {
+            "h": 21,
+            "t": 44,
+            "p": 0
+          },
+          {
+            "h": 22,
+            "t": 43,
+            "p": 0
+          }
+        ]
+      }
+    },
+    "tr": {
+      "component": "daylight",
+      "props": {
+        "sunrise": "06:35",
+        "sunset": "16:42",
+        "now": "07:10"
+      }
+    },
+    "band": {
+      "component": "calendar",
+      "variant": "timeline",
+      "props": {
+        "events": [
+          {
+            "start": "09:30",
+            "end": "10:00",
+            "title": "Pearmill standup",
+            "where": "Zoom"
+          },
+          {
+            "start": "11:00",
+            "end": "12:00",
+            "title": "Flux weekly",
+            "where": "Zoom"
+          },
+          {
+            "start": "13:00",
+            "end": "14:00",
+            "title": "Lunch with Sam",
+            "where": "Walter's, Fort Greene",
+            "personal": true
+          },
+          {
+            "start": "15:00",
+            "end": "15:45",
+            "title": "Better pacing review",
+            "where": "Meet"
+          },
+          {
+            "start": "16:30",
+            "end": "17:30",
+            "title": "Hiring panel",
+            "where": "Zoom"
+          }
+        ],
+        "now": "07:10",
+        "from": 7,
+        "to": 21
+      }
+    },
+    "bl": {
+      "component": "calendar",
+      "variant": "list",
+      "props": {
+        "events": [
+          {
+            "start": "09:30",
+            "end": "10:00",
+            "title": "Pearmill standup",
+            "where": "Zoom"
+          },
+          {
+            "start": "11:00",
+            "end": "12:00",
+            "title": "Flux weekly",
+            "where": "Zoom"
+          },
+          {
+            "start": "13:00",
+            "end": "14:00",
+            "title": "Lunch with Sam",
+            "where": "Walter's, Fort Greene",
+            "personal": true
+          },
+          {
+            "start": "15:00",
+            "end": "15:45",
+            "title": "Better pacing review",
+            "where": "Meet"
+          },
+          {
+            "start": "16:30",
+            "end": "17:30",
+            "title": "Hiring panel",
+            "where": "Zoom"
+          }
+        ],
+        "max": 2,
+        "detail": false,
+        "from": 7,
+        "to": 19
+      }
+    },
+    "br": {
+      "component": "plants",
+      "props": {
+        "state": "weekend",
+        "due": "2026-11-08"
+      }
+    }
+  }
+}

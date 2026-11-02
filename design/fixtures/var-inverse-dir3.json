@@ -1,0 +1,140 @@
+{
+  "name": "var-inverse-dir3",
+  "template": "rail",
+  "slots": {
+    "header": {
+      "component": "dateline",
+      "props": {
+        "date": "2026-11-05",
+        "place": "Fort Greene",
+        "updated": "06:50"
+      }
+    },
+    "main": {
+      "component": "weather",
+      "variant": "field",
+      "props": {
+        "now": 51,
+        "condition": "Rain",
+        "summary": "Wet until noon, then clearing",
+        "hi": 60,
+        "lo": 50,
+        "hours": [
+          {
+            "h": 6,
+            "t": 50,
+            "p": 0.9
+          },
+          {
+            "h": 7,
+            "t": 50,
+            "p": 0.9
+          },
+          {
+            "h": 8,
+            "t": 51,
+            "p": 0.8
+          },
+          {
+            "h": 9,
+            "t": 52,
+            "p": 0.8
+          },
+          {
+            "h": 10,
+            "t": 53,
+            "p": 0.7
+          },
+          {
+            "h": 11,
+            "t": 55,
+            "p": 0.6
+          },
+          {
+            "h": 12,
+            "t": 57,
+            "p": 0.4
+          },
+          {
+            "h": 13,
+            "t": 58,
+            "p": 0.2
+          },
+          {
+            "h": 14,
+            "t": 60,
+            "p": 0.1
+          },
+          {
+            "h": 15,
+            "t": 60,
+            "p": 0
+          },
+          {
+            "h": 16,
+            "t": 59,
+            "p": 0
+          },
+          {
+            "h": 17,
+            "t": 57,
+            "p": 0
+          },
+          {
+            "h": 18,
+            "t": 55,
+            "p": 0
+          },
+          {
+            "h": 19,
+            "t": 54,
+            "p": 0
+          },
+          {
+            "h": 20,
+            "t": 53,
+            "p": 0
+          },
+          {
+            "h": 21,
+            "t": 52,
+            "p": 0
+          },
+          {
+            "h": 22,
+            "t": 51,
+            "p": 0
+          }
+        ]
+      }
+    },
+    "rail": [
+      {
+        "component": "nextEvent",
+        "props": {
+          "title": "Pearmill standup",
+          "start": "09:30",
+          "inMinutes": 160,
+          "where": "Zoom"
+        }
+      },
+      {
+        "component": "note",
+        "props": {
+          "text": "Call the super about the radiator.",
+          "from": "Nima",
+          "at": "23:12"
+        }
+      },
+      {
+        "component": "plants",
+        "props": {
+          "state": "overdue",
+          "due": "2026-11-03",
+          "daysLate": 2
+        }
+      }
+    ]
+  },
+  "theme": "inverse"
+}

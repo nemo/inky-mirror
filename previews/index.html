@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>inky-mirror previews</title>
+<style>
+@font-face { font-family: Archivo; src: url("../design/fonts/Archivo-VF.ttf"); font-weight: 100 900; font-stretch: 62% 125%; }
+:root { --ink:#393039; --paper:#fff; --ground:#d6d8da; /* brushed-aluminium grey, the Braun housing */ }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 500 15px/1.4 Archivo, sans-serif; padding: 32px 24px 64px; }
+h1 { font: 750 32px/1.1 Archivo; font-stretch: 88%; margin: 0 0 4px; }
+.lede { margin: 0 0 32px; max-width: 70ch; }
+h2 { font: 700 20px Archivo; margin: 48px 0 16px; border-top: 1px solid var(--ink); padding-top: 12px; }
+figure { margin: 0 0 40px; }
+figcaption { font-weight: 650; margin-bottom: 8px; }
+figcaption em { color: #9c484b; font-style: normal; }
+.pair { display: flex; flex-wrap: wrap; gap: 16px; }
+.pair > div { display: flex; flex-direction: column; gap: 4px; }
+.pair span { font-size: 13px; }
+img { display: block; max-width: 100%; height: auto; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.18); image-rendering: pixelated; }
+a { color: var(--ink); text-underline-offset: 3px; font-size: 13px; }
+::selection { background: #d0be47; }
+</style></head><body>
+<h1>inky-mirror · component previews</h1>
+<p class="lede">600×448, rendered by headless Chromium, then quantised to the Inky Impression's 7 inks. The left image of each pair is what the panel will show. All data is synthetic.</p>
+
+  <section><h2>Colour treatments</h2>
+  <figure>
+      <figcaption>Colour · mono: Monochrome + one red signal dot, blue for water · Direction 3</figcaption>
+      <div class="pair">
+        <div><img src="var-mono-dir3.png" width="600" height="448" alt="Colour · mono: Monochrome + one red signal dot, blue for water · Direction 3, quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="var-mono-dir3.raw.png" width="600" height="448" alt="Colour · mono: Monochrome + one red signal dot, blue for water · Direction 3, browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/var-mono-dir3.json">screen JSON</a>
+    </figure><figure>
+      <figcaption>Colour · mono: Monochrome + one red signal dot, blue for water · Plant states</figcaption>
+      <div class="pair">
+        <div><img src="var-mono-plants.png" width="600" height="448" alt="Colour · mono: Monochrome + one red signal dot, blue for water · Plant states, quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="var-mono-plants.raw.png" width="600" height="448" alt="Colour · mono: Monochrome + one red signal dot, blue for water · Plant states, browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/var-mono-plants.json">screen JSON</a>
+    </figure><figure>
+      <figcaption>Colour · green: Braun green for action, red only for now · Direction 3</figcaption>
+      <div class="pair">
+        <div><img src="var-green-dir3.png" width="600" height="448" alt="Colour · green: Braun green for action, red only for now · Direction 3, quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="var-green-dir3.raw.png" width="600" height="448" alt="Colour · green: Braun green for action, red only for now · Direction 3, browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/var-green-dir3.json">screen JSON</a>
+    </figure><figure>
+      <figcaption>Colour · green: Braun green for action, red only for now · Plant states</figcaption>
+      <div class="pair">
+        <div><img src="var-green-plants.png" width="600" height="448" alt="Colour · green: Braun green for action, red only for now · Plant states, quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="var-green-plants.raw.png" width="600" height="448" alt="Colour · green: Braun green for action, red only for now · Plant states, browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/var-green-plants.json">screen JSON</a>
+    </figure><figure>
+      <figcaption>Colour · inverse: Black inverse panels, yellow sparingly · Direction 3</figcaption>
+      <div class="pair">
+        <div><img src="var-inverse-dir3.png" width="600" height="448" alt="Colour · inverse: Black inverse panels, yellow sparingly · Direction 3, quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="var-inverse-dir3.raw.png" width="600" height="448" alt="Colour · inverse: Black inverse panels, yellow sparingly · Direction 3, browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/var-inverse-dir3.json">screen JSON</a>
+    </figure><figure>
+      <figcaption>Colour · inverse: Black inverse panels, yellow sparingly · Plant states</figcaption>
+      <div class="pair">
+        <div><img src="var-inverse-plants.png" width="600" height="448" alt="Colour · inverse: Black inverse panels, yellow sparingly · Plant states, quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="var-inverse-plants.raw.png" width="600" height="448" alt="Colour · inverse: Black inverse panels, yellow sparingly · Plant states, browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/var-inverse-plants.json">screen JSON</a>
+    </figure>
+  </section>
+  <section><h2>Morning directions</h2>
+  <figure>
+      <figcaption>Direction 1 · Instrument panel</figcaption>
+      <div class="pair">
+        <div><img src="dir1-instrument.png" width="600" height="448" alt="Direction 1 · Instrument panel, quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="dir1-instrument.raw.png" width="600" height="448" alt="Direction 1 · Instrument panel, browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/dir1-instrument.json">screen JSON</a>
+    </figure><figure>
+      <figcaption>Direction 2 · Swiss poster</figcaption>
+      <div class="pair">
+        <div><img src="dir2-poster.png" width="600" height="448" alt="Direction 2 · Swiss poster, quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="dir2-poster.raw.png" width="600" height="448" alt="Direction 2 · Swiss poster, browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/dir2-poster.json">screen JSON</a>
+    </figure><figure>
+      <figcaption>Direction 3 · Weather abstraction</figcaption>
+      <div class="pair">
+        <div><img src="dir3-weather-field.png" width="600" height="448" alt="Direction 3 · Weather abstraction, quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="dir3-weather-field.raw.png" width="600" height="448" alt="Direction 3 · Weather abstraction, browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/dir3-weather-field.json">screen JSON</a>
+    </figure><figure>
+      <figcaption>Direction 4 · Timeline strip</figcaption>
+      <div class="pair">
+        <div><img src="dir4-timeline.png" width="600" height="448" alt="Direction 4 · Timeline strip, quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="dir4-timeline.raw.png" width="600" height="448" alt="Direction 4 · Timeline strip, browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/dir4-timeline.json">screen JSON</a>
+    </figure><figure>
+      <figcaption>Direction 5 · Quiet day</figcaption>
+      <div class="pair">
+        <div><img src="dir5-quiet.png" width="600" height="448" alt="Direction 5 · Quiet day, quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="dir5-quiet.raw.png" width="600" height="448" alt="Direction 5 · Quiet day, browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/dir5-quiet.json">screen JSON</a>
+    </figure>
+  </section>
+  <section><h2>Ambient</h2>
+  <figure>
+      <figcaption>Ambient · Grille</figcaption>
+      <div class="pair">
+        <div><img src="ambient-grille.png" width="600" height="448" alt="Ambient · Grille, quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="ambient-grille.raw.png" width="600" height="448" alt="Ambient · Grille, browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/ambient-grille.json">screen JSON</a>
+    </figure><figure>
+      <figcaption>Ambient · Sun path</figcaption>
+      <div class="pair">
+        <div><img src="ambient-sunpath.png" width="600" height="448" alt="Ambient · Sun path, quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="ambient-sunpath.raw.png" width="600" height="448" alt="Ambient · Sun path, browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/ambient-sunpath.json">screen JSON</a>
+    </figure>
+  </section>
+  <section><h2>Component sheets</h2>
+  <figure>
+      <figcaption>Sheet · Plant reminder states (quiet → loud)</figcaption>
+      <div class="pair">
+        <div><img src="sheet-plants.png" width="600" height="448" alt="Sheet · Plant reminder states (quiet → loud), quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="sheet-plants.raw.png" width="600" height="448" alt="Sheet · Plant reminder states (quiet → loud), browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/sheet-plants.json">screen JSON</a>
+    </figure><figure>
+      <figcaption>Sheet · Weather full + calendar list</figcaption>
+      <div class="pair">
+        <div><img src="sheet-weather.png" width="600" height="448" alt="Sheet · Weather full + calendar list, quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="sheet-weather.raw.png" width="600" height="448" alt="Sheet · Weather full + calendar list, browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/sheet-weather.json">screen JSON</a>
+    </figure><figure>
+      <figcaption>Sheet · Next event, travel, note, daylight</figcaption>
+      <div class="pair">
+        <div><img src="sheet-modules.png" width="600" height="448" alt="Sheet · Next event, travel, note, daylight, quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="sheet-modules.raw.png" width="600" height="448" alt="Sheet · Next event, travel, note, daylight, browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/sheet-modules.json">screen JSON</a>
+    </figure>
+  </section>
+  <section><h2>Grid templates</h2>
+  <figure>
+      <figcaption>Template · rail — A wide main area (canvas, weather field, poster) and a stacked rail of small modules.</figcaption>
+      <div class="pair">
+        <div><img src="template-rail.png" width="600" height="448" alt="Template · rail — A wide main area (canvas, weather field, poster) and a stacked rail of small modules., quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="template-rail.raw.png" width="600" height="448" alt="Template · rail — A wide main area (canvas, weather field, poster) and a stacked rail of small modules., browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/template-rail.json"></a>
+    </figure><figure>
+      <figcaption>Template · poster — A typographic statement across the top two-thirds; three equal modules below.</figcaption>
+      <div class="pair">
+        <div><img src="template-poster.png" width="600" height="448" alt="Template · poster — A typographic statement across the top two-thirds; three equal modules below., quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="template-poster.raw.png" width="600" height="448" alt="Template · poster — A typographic statement across the top two-thirds; three equal modules below., browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/template-poster.json"></a>
+    </figure><figure>
+      <figcaption>Template · strip — Weather and daylight on top, the day's timeline across the middle, details below.</figcaption>
+      <div class="pair">
+        <div><img src="template-strip.png" width="600" height="448" alt="Template · strip — Weather and daylight on top, the day's timeline across the middle, details below., quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="template-strip.raw.png" width="600" height="448" alt="Template · strip — Weather and daylight on top, the day's timeline across the middle, details below., browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/template-strip.json"></a>
+    </figure><figure>
+      <figcaption>Template · dial — A full-width scale instrument above three equal modules.</figcaption>
+      <div class="pair">
+        <div><img src="template-dial.png" width="600" height="448" alt="Template · dial — A full-width scale instrument above three equal modules., quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="template-dial.raw.png" width="600" height="448" alt="Template · dial — A full-width scale instrument above three equal modules., browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/template-dial.json"></a>
+    </figure><figure>
+      <figcaption>Template · quiet — One canvas and a single footer line. For days with little to say.</figcaption>
+      <div class="pair">
+        <div><img src="template-quiet.png" width="600" height="448" alt="Template · quiet — One canvas and a single footer line. For days with little to say., quantised"><span>On the panel: 7 inks</span></div>
+        <div><img src="template-quiet.raw.png" width="600" height="448" alt="Template · quiet — One canvas and a single footer line. For days with little to say., browser render"><span>Browser render</span></div>
+      </div>
+      <a href="../design/fixtures/template-quiet.json"></a>
+    </figure>
+  </section>
+</body></html>

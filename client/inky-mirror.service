@@ -1,0 +1,18 @@
+[Unit]
+Description=inky-mirror v2 client (frame poller + buttons)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=nima
+WorkingDirectory=/home/nima/inky-mirror/client
+# INKY_DEVICE_TOKEN (and optionally INKY_API, POLL_SECONDS) live here, mode 600.
+EnvironmentFile=/home/nima/.config/inky-mirror/env
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/nima/.virtualenvs/pimoroni/bin/python /home/nima/inky-mirror/client/inky_client.py
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

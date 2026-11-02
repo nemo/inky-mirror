@@ -1,0 +1,48 @@
+{
+  "name": "dir2-poster",
+  "template": "poster",
+  "slots": {
+    "header": {
+      "component": "dateline",
+      "props": {
+        "date": "2026-11-04",
+        "place": "Fort Greene",
+        "updated": "06:35"
+      }
+    },
+    "poster": {
+      "component": "poster",
+      "props": {
+        "text": "Rain from three.",
+        "sub": "Take the umbrella to Industry City.",
+        "ink": "ink"
+      }
+    },
+    "a": {
+      "component": "travel",
+      "props": {
+        "to": "Industry City",
+        "leaveBy": "09:12",
+        "minutes": 31,
+        "line": "G",
+        "urgent": false
+      }
+    },
+    "b": {
+      "component": "nextEvent",
+      "props": {
+        "title": "Offsite with Flux",
+        "start": "10:00",
+        "inMinutes": 205,
+        "where": "Industry City"
+      }
+    },
+    "c": {
+      "component": "plants",
+      "props": {
+        "state": "upcoming",
+        "due": "2026-11-08"
+      }
+    }
+  }
+}

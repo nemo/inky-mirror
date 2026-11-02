@@ -1,0 +1,153 @@
+{
+  "name": "sheet-weather",
+  "template": "sheet2",
+  "slots": {
+    "left": {
+      "component": "weather",
+      "variant": "full",
+      "props": {
+        "now": 48,
+        "condition": "Cloudy",
+        "summary": "Rain 3 to 7pm",
+        "hi": 57,
+        "lo": 46,
+        "hours": [
+          {
+            "h": 6,
+            "t": 46,
+            "p": 0
+          },
+          {
+            "h": 7,
+            "t": 46,
+            "p": 0
+          },
+          {
+            "h": 8,
+            "t": 47,
+            "p": 0
+          },
+          {
+            "h": 9,
+            "t": 49,
+            "p": 0.1
+          },
+          {
+            "h": 10,
+            "t": 51,
+            "p": 0.1
+          },
+          {
+            "h": 11,
+            "t": 53,
+            "p": 0.2
+          },
+          {
+            "h": 12,
+            "t": 55,
+            "p": 0.3
+          },
+          {
+            "h": 13,
+            "t": 56,
+            "p": 0.4
+          },
+          {
+            "h": 14,
+            "t": 57,
+            "p": 0.6
+          },
+          {
+            "h": 15,
+            "t": 56,
+            "p": 0.8
+          },
+          {
+            "h": 16,
+            "t": 54,
+            "p": 0.9
+          },
+          {
+            "h": 17,
+            "t": 52,
+            "p": 0.7
+          },
+          {
+            "h": 18,
+            "t": 51,
+            "p": 0.5
+          },
+          {
+            "h": 19,
+            "t": 50,
+            "p": 0.2
+          },
+          {
+            "h": 20,
+            "t": 49,
+            "p": 0.1
+          },
+          {
+            "h": 21,
+            "t": 48,
+            "p": 0
+          },
+          {
+            "h": 22,
+            "t": 47,
+            "p": 0
+          }
+        ]
+      }
+    },
+    "right": {
+      "component": "calendar",
+      "variant": "list",
+      "props": {
+        "events": [
+          {
+            "start": "09:30",
+            "end": "10:00",
+            "title": "Pearmill standup",
+            "where": "Zoom"
+          },
+          {
+            "start": "11:00",
+            "end": "12:00",
+            "title": "Flux weekly",
+            "where": "Zoom"
+          },
+          {
+            "start": "13:00",
+            "end": "14:00",
+            "title": "Lunch with Sam",
+            "where": "Walter's, Fort Greene",
+            "personal": true
+          },
+          {
+            "start": "15:00",
+            "end": "15:45",
+            "title": "Better pacing review",
+            "where": "Meet"
+          },
+          {
+            "start": "16:30",
+            "end": "17:30",
+            "title": "Hiring panel",
+            "where": "Zoom"
+          },
+          {
+            "start": "19:30",
+            "end": "21:00",
+            "title": "Dinner at Olea",
+            "where": "Lafayette Ave",
+            "personal": true
+          }
+        ],
+        "max": 4,
+        "from": 7,
+        "to": 21
+      }
+    }
+  }
+}

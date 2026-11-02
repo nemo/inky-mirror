@@ -1,0 +1,13 @@
+{
+  "name": "ambient-sunpath",
+  "template": "full",
+  "slots": {
+    "canvas": {
+      "component": "canvas",
+      "props": {
+        "gen": "sunpath",
+        "seed": "2026-11-03"
+      }
+    }
+  }
+}

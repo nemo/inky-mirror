@@ -1,0 +1,20 @@
+{
+  "name": "dir5-quiet",
+  "template": "quiet",
+  "slots": {
+    "canvas": {
+      "component": "canvas",
+      "props": {
+        "gen": "quiet",
+        "word": "Clear.",
+        "dot": "yellow"
+      }
+    },
+    "footer": {
+      "component": "line",
+      "props": {
+        "text": "Saturday 7 November · 52° to 61° · Dinner at 7:30 · Plants tomorrow"
+      }
+    }
+  }
+}

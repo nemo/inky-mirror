@@ -1,0 +1,8 @@
+design/node_modules/
+design/build/
+.impeccable/review/
+.env
+.claude/settings.local.json
+.claude/skills/impeccable/scripts/bin/
+.DS_Store
+__pycache__/

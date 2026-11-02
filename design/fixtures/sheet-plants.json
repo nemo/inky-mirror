@@ -1,0 +1,53 @@
+{
+  "name": "sheet-plants",
+  "template": "sheet",
+  "slots": {
+    "all": [
+      {
+        "component": "plants",
+        "props": {
+          "state": "done",
+          "due": "2026-11-08",
+          "wateredOn": "Sunday"
+        }
+      },
+      {
+        "component": "plants",
+        "props": {
+          "state": "upcoming",
+          "due": "2026-11-08"
+        }
+      },
+      {
+        "component": "plants",
+        "props": {
+          "state": "weekend",
+          "due": "2026-11-08"
+        }
+      },
+      {
+        "component": "plants",
+        "props": {
+          "state": "due",
+          "due": "2026-11-08"
+        }
+      },
+      {
+        "component": "plants",
+        "props": {
+          "state": "overdue",
+          "due": "2026-11-08",
+          "daysLate": 1
+        }
+      },
+      {
+        "component": "plants",
+        "props": {
+          "state": "overdue",
+          "due": "2026-11-08",
+          "daysLate": 3
+        }
+      }
+    ]
+  }
+}

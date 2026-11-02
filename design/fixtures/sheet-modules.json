@@ -1,0 +1,54 @@
+{
+  "name": "sheet-modules",
+  "template": "sheet2",
+  "slots": {
+    "left": [
+      {
+        "component": "nextEvent",
+        "props": {
+          "title": "Pearmill standup",
+          "start": "09:30",
+          "inMinutes": 42,
+          "where": "Zoom"
+        }
+      },
+      {
+        "component": "travel",
+        "props": {
+          "to": "Industry City",
+          "leaveBy": "08:52",
+          "minutes": 31,
+          "line": "G",
+          "urgent": true
+        }
+      },
+      {
+        "component": "note",
+        "props": {
+          "text": "Flux report is drafted. Review before 10.",
+          "from": "Claude (Flux agent)",
+          "at": "02:14"
+        }
+      }
+    ],
+    "right": [
+      {
+        "component": "daylight",
+        "props": {
+          "sunrise": "06:31",
+          "sunset": "16:46",
+          "now": "06:40"
+        }
+      },
+      {
+        "component": "travel",
+        "props": {
+          "to": "Walter's",
+          "leaveBy": "12:48",
+          "minutes": 9,
+          "mode": "walk"
+        }
+      }
+    ]
+  }
+}

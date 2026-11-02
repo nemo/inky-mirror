@@ -1,0 +1,13 @@
+{
+  "name": "ambient-grille",
+  "template": "full",
+  "slots": {
+    "canvas": {
+      "component": "canvas",
+      "props": {
+        "gen": "grille",
+        "seed": "2026-11-02"
+      }
+    }
+  }
+}
