@@ -1,3 +1,4 @@
+import { fitSlots } from "./src/fit.mjs";
 // Render every fixture screen to previews/<name>.raw.png (browser output) and
 // previews/<name>.png (quantised to the panel's 7 inks), then write the
 // contact sheet previews/index.html.
@@ -51,6 +52,7 @@ for (const job of jobs) {
   fs.writeFileSync(file, html);
   await page.goto(pathToFileURL(file).href);
   await page.evaluate(() => document.fonts.ready);
+  await page.evaluate(fitSlots);
 
   // overflow check: any slot whose content spills its box
   const overflow = await page.$$eval(".slot", (els) =>
